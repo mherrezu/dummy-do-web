@@ -13,6 +13,7 @@ import TheWelcome from './components/TheWelcome.vue'
   </header>
 
   <main>
+    <h3 class="bg-red-500 font-bold p-8">TAILWINDCSS TEST</h3>
     <TheWelcome />
   </main>
 </template>
