@@ -1,33 +1,29 @@
-## Setup
+# vue-project
 
-Make sure to install the dependencies:
+This template should help get you started developing with Vue 3 in Vite.
 
-```bash
-# yarn
-yarn install
+## Recommended IDE Setup
+
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+
+## Customize configuration
+
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+## Project Setup
+
+```sh
+npm install
 ```
 
-## Development Server (only FE)
+### Compile and Hot-Reload for Development
 
-Start the development server on `http://localhost:3000`:
-
-```bash
-# yarn
-yarn dev
+```sh
+npm run dev
 ```
 
-## Production
+### Compile and Minify for Production
 
-Build the application for production:
-
-```bash
-# yarn
-yarn build && yarn generate
-```
-
-Locally preview production build:
-
-```bash
-# yarn
-yarn preview
+```sh
+npm run build
 ```
