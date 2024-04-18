@@ -5,20 +5,18 @@ import TheWelcome from './components/TheWelcome.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
   </header>
 
-  <main>
-    <h3 class="bg-red-500 font-bold p-8">TAILWINDCSS TEST</h3>
-    <TheWelcome />
+  <main class="font-jura">
+    <h3 class="bg-primary-100 font-jura text-xl  p-8 xl:bg-secondary-200">PRIMARY 100</h3>
+    <h3 class="bg-primary-200  p-8">PRIMARY 200</h3>
+    <h3 class="bg-secondary-100  p-8">SECONDARY 100</h3>
+    <h3 class="bg-secondary-200  p-8">SECONDARY 200</h3>
   </main>
 </template>
 
-<style scoped>
+<!-- <style scoped>
 header {
   line-height: 1.5;
 }
@@ -45,4 +43,4 @@ header {
     flex-wrap: wrap;
   }
 }
-</style>
+</style> -->

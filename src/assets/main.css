@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Jura Light'), local('Jura-Light'),
+    url(../assets/fonts/Jura-Light.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Jura';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Jura Bold'), local('Jura-Bold'),
+    url(../assets/fonts/Jura-Bold.ttf) format('opentype');
+}
+
 #app {
   max-width: 1280px;
   margin: 0 auto;
