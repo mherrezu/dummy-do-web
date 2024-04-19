@@ -1,16 +1,14 @@
 <script setup>
 import Header from './components/Header.vue'
+import HomeMain from './components/HomeMain.vue'
 </script>
 
 <template>
   <header>
-
-    <div class="wrapper">
       <Header />
-    </div>
-  </header>
-
-  <main>
-
+    </header>
+    
+    <main class="font-jura">    
+      <HomeMain />
   </main>
 </template>

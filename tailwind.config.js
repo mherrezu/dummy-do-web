@@ -11,6 +11,32 @@ const colors = {
   },
 }
 
+const size = {
+  xl: '2rem',
+  lg: [
+    '1.25rem',
+    {
+      letterSpacing: '0',
+      lineHeight: '1.75rem',
+    },
+  ],
+  md: "1.125rem",
+  sm: [
+    '0.75rem',
+    {
+      letterSpacing: '0',
+      lineHeight: '1.125rem',
+    },
+  ],
+}
+
+const screens = {
+  sm: { min: "640px" },
+  md: { min: "768px" },
+  lg: { min: "1024px" },
+  xl: { min: "1216px" },
+}
+
 module.exports = {
   content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
@@ -66,6 +92,8 @@ module.exports = {
     },
     extend: {
       colors: colors,
+      sizes: size,
+      screens: screens,
     },
   },
   plugins: [

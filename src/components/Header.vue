@@ -1,24 +1,27 @@
 <!-- Navbar.vue -->
 <template>
-    <nav class="bg-[rgb(241,139,130)]">
-      <div class="container mx-auto px-4">
+    <nav class="font-jura font-bold bg-secondary-100">
         <!-- Logo -->
-        <div class="flex items-center justify-between h-16">
+        <div class="flex items-center justify-between h-22">
           <div class="flex items-center">
-            <img src="/src/assets/Logo - Purple.png" alt="Logo" class="h-8">
-            <p class="p-3 jura-bold text-[rgb(98,79,143)] select-none">dummy do web</p>
+            <img src="/src/assets/img/Logo - Purple.png" alt="Logo" class="h-12 ml-4">
+            <p class="pl-3  text-primary-200 text-md selection:select-none">dummy do web</p>
+          </div>
+
+          <div class="hidden md:block">
+            <h2 class="text-secondary-200">Junior made easy</h2>
           </div>
           
           <!-- Links -->
           <div class="hidden md:block">
-            <div class="ml-10 flex items-baseline space-x-4">
-              <router-link to="/" class="jura-bold text-[rgb(98,79,143)] hover:text-[rgb(242,188,215)] hover:underline px-3 py-2 rounded-md text-sm">home</router-link>
-              <router-link to="/about" class="jura-bold text-[rgb(98,79,143)] hover:text-[rgb(242,188,215)] hover:underline px-3 py-2 rounded-md text-sm">about</router-link>
-              <router-link to="/contact" class="jura-bold text-[rgb(98,79,143)] hover:text-[rgb(242,188,215)] hover:underline px-3 py-2 rounded-md text-sm ">contact</router-link>
+            <div class="flex items-baseline space-x-4 p-8 text-primary-200 text-md">
+              <router-link to="/" class="hover:text-primary-100 hover:underline">home</router-link>
+              <router-link to="/about" class="hover:text-primary-100 hover:underline">about</router-link>
+              <router-link to="/contact" class="hover:text-primary-100 hover:underline">contact</router-link>
             </div>
           </div>
         </div>
-      </div>
+
     </nav>
   </template>
   
