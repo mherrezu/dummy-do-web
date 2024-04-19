@@ -10,8 +10,13 @@
             <h2 class="text-4xl text-primary-200">frontend</h2>
         </div>
     </div>
+    <router-link to="/app" class="hover:underline">
+      <CTA size="xxl" color="no-color-primary" class="hover:underline">Back Home</CTA>
+    </router-link>
+    
     <div class="flex justify-center items-center p-10">
       <div class="grid grid-cols-3 gap-8">
+        <CTA size="lg" color="primary" label="fundamentals" class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"/>
         <button class="bg-slate-50 py-4 px-10 text-xl text-primary-200 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-primary-200 hover:text-secondary-200 duration-300">fundamentals</button>
         <button class="bg-slate-50 py-4 px-10 text-xl text-primary-200 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-primary-200 hover:text-secondary-200 duration-300">frameworks</button>
         <button class="bg-slate-50 py-4 px-10 text-xl text-primary-200 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-primary-200 hover:text-secondary-200 duration-300">libraries</button>
@@ -26,8 +31,6 @@
 </div>
 </template>
   
-  <script>
-  export default {
-    name: 'FrontendMain',
-  }
-  </script>
+<script setup>
+import CTA from './CTA.vue'
+</script>
