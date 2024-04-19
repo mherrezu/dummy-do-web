@@ -7,25 +7,23 @@
             </a>
         </div>
         <div>
-            <h2 class="text-4xl text-primary-200">frontend</h2>
+            <CTA size="4xl" color="front-title-color" label="frontend"/>
         </div>
     </div>
     <router-link to="/app" class="hover:underline">
-      <CTA size="xxl" color="no-color-primary" class="hover:underline">Back Home</CTA>
     </router-link>
     
     <div class="flex justify-center items-center p-10">
       <div class="grid grid-cols-3 gap-8">
-        <CTA size="lg" color="primary" label="fundamentals" class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"/>
-        <button class="bg-slate-50 py-4 px-10 text-xl text-primary-200 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-primary-200 hover:text-secondary-200 duration-300">fundamentals</button>
-        <button class="bg-slate-50 py-4 px-10 text-xl text-primary-200 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-primary-200 hover:text-secondary-200 duration-300">frameworks</button>
-        <button class="bg-slate-50 py-4 px-10 text-xl text-primary-200 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-primary-200 hover:text-secondary-200 duration-300">libraries</button>
-        <button class="bg-slate-50 py-4 px-10 text-xl text-primary-200 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-primary-200 hover:text-secondary-200 duration-300">UX/UI</button>
-        <button class="bg-slate-50 py-4 px-10 text-xl text-primary-200 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-primary-200 hover:text-secondary-200 duration-300">best practices</button>
-        <button class="bg-slate-50 py-4 px-10 text-xl text-primary-200 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-primary-200 hover:text-secondary-200 duration-300">GitHub</button>
-        <button class="bg-slate-50 py-4 px-10 text-xl text-primary-200 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-primary-200 hover:text-secondary-200 duration-300">inspiration</button>
-        <button class="bg-slate-50 py-4 px-10 text-xl text-primary-200 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-primary-200 hover:text-secondary-200 duration-300">who to follow</button>
-        <button class="bg-slate-50 py-4 px-10 rounded text-xl text-primary-200 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-primary-200 hover:text-secondary-200 duration-300">interview Q&A</button>
+        <CTA size="xl" color="primary" transition="on" label="fundamentals"/>
+        <CTA size="xl" color="primary" transition="on" label="frameworks" />
+        <CTA size="xl" color="primary" transition="on" label="libraries"/>
+        <CTA size="xl" color="primary" transition="on" label="UX/UI"/>
+        <CTA size="xl" color="primary" transition="on" label="best practices"/>
+        <CTA size="xl" color="primary" transition="on" label="GitHub"/>
+        <CTA size="xl" color="primary" transition="on" label="inspiration"/>
+        <CTA size="xl" color="primary" transition="on" label="who to follow"/>
+        <CTA size="xl" color="primary" transition="on" label="interview Q&A"/>
       </div>
     </div>
 </div>

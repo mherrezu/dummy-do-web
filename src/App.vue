@@ -12,7 +12,7 @@ import Footer from './components/Footer.vue'
     </header>
     
     <main class="font-jura font-bold">    
-      <!-- <HomeMain /> -->
+      <HomeMain />
       <FrontendMain />
   </main>
   <footer>
