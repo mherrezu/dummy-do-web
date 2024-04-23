@@ -3,7 +3,7 @@
     <div class="flex items-center justify-between p-10">
         <div>
             <a href="/">
-                <img src="/src/components/icons/ArrowLeft.png" alt="ArrowLeft" class="w-10">
+                <!-- <img src="/src/components/icons/ArrowLeft.png" alt="ArrowLeft" class="w-10"> -->
             </a>
         </div>
         <div>

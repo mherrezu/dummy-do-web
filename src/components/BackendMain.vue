@@ -3,7 +3,7 @@
     <div class="flex items-center justify-between p-10">
         <div class="border border-secondary-200 rounded-full">
             <a href="/">
-                <img src="/src/components/icons/ArrowLeft.png" alt="ArrowLeft" class="w-10 text-secondary-200">
+                <!-- <img src="/src/components/icons/ArrowLeft.png" alt="ArrowLeft" class="w-10 text-secondary-200"> -->
             </a>
         </div>
         <div>

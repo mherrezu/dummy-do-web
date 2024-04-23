@@ -1,0 +1,51 @@
+{
+  "fundamentals": {
+    "FRONTEND": {
+      
+    }
+  },
+  "frameworks": {
+    "react": {
+      "version": "16.8.6"
+    },
+    "react-dom": {
+      "version": "16.8.6"
+    }
+  },
+  "libraries": {
+    "react-router-dom": {
+      "version": "5.0.1"
+    }
+  },
+  "UX/UI": {
+    "material-ui": {
+      "version": "4.0.0"
+    }
+  },
+  "best practices": {
+    "eslint": {
+      "version": "5.16.0"
+    },
+    "prettier": {
+      "version": "1.17.0"
+    }
+  },
+  "inspiration": {
+    "react-boilerplate": {
+      "version": "3.7.0"
+    }
+  },
+  "who to follow": {
+    "dan-abramov": {
+      "twitter": "https://twitter.com/dan_abramov"
+    },
+    "kent-c-dodds": {
+      "twitter": "https://twitter.com/kentcdodds"
+    }
+  },
+  "interview Q&A": {
+    "react": {
+      "questions": "https://www.edureka.co/blog/interview-questions/react-interview-questions/"
+    }
+  }
+}

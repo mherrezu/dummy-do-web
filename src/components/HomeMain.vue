@@ -8,8 +8,10 @@
       </div>
     </div>
     <section>
-      <FrontendMain v-if="showFrontend" />
-      <BackendMain v-if="showBackend" />
+      <ResourcesMain v-if="(showFrontend && isFrontend) || (showBackend && !isFrontend)" 
+      :isFrontend="isFrontend ? true : false" />
+      <!-- <FrontendMain v-if="showFrontend" />
+      <BackendMain v-if="showBackend" /> -->
     </section>
 </template>
   
@@ -17,16 +19,19 @@
 import CTA from '@/components/CTA.vue'
 import FrontendMain from '@/components/FrontendMain.vue';
 import BackendMain from '@/components/BackendMain.vue';
+import ResourcesMain from '@/components/ResourcesMain.vue';
 </script>
 <script>
 export default {
   components: {
     CTA,
     FrontendMain,
-    BackendMain
+    BackendMain,
+    ResourcesMain
   },
   data() {
     return {
+      isFrontend: true,
       showFrontend: false,
       showBackend: false
     }
@@ -34,14 +39,16 @@ export default {
   methods: {
     handleShowSection(event) {
       if (event === 'frontend') {
-        console.log('showFrontend', this.showFrontend);
-        this.showFrontend = !this.showFrontend;
+        this.showFrontend = true;
+        this.isFrontend = true;
+        this.showBackend = false;
         if (this.showFrontend = true)
           this.$router.push('/frontend');
       }
       if (event === 'backend') {
-        console.log('showBackend', this.showBackend);
-        this.showBackend = !this.showBackend;
+        this.showBackend = true;
+        this.isFrontend = false;
+        this.showFrontend = false;
         if (this.showBackend = true)
           this.$router.push('/backend');
       }
