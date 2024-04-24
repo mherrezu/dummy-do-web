@@ -15,16 +15,12 @@
   
 <script setup>
 import CTA from '@/components/CTA.vue'
-import FrontendMain from '@/components/FrontendMain.vue';
-import BackendMain from '@/components/BackendMain.vue';
 import ResourcesMain from '@/components/ResourcesMain.vue';
 </script>
 <script>
 export default {
   components: {
     CTA,
-    FrontendMain,
-    BackendMain,
     ResourcesMain
   },
   data() {

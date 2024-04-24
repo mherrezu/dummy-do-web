@@ -20,16 +20,23 @@
       </div>
       <div class="flex justify-center items-center p-10">
         <div class="grid grid-cols-3 gap-8">
-          <CTA v-for="(key, index) in keysToDisplay" :key="`res-${index}`"
+          <CTA @click="showResources = !showResources" v-for="(key, index) in keysToDisplay" :key="`res-${index}`"
             size="xl" :color="isFrontend ? 'primary' : 'secondary'"
             transition="on" :label="key"/>
+          </div>
         </div>
-      </div>
+        <ul v-if="showResources">
+          <li v-for="(resource, index) in frontResources" :key="`res-${index}`">
+            <Card :url="resource.url" :img="resource.img" 
+              :title="resource.title" :description="resource.description"/>
+          </li> 
+        </ul>
   </div>
   </template>
   
 <script setup>
 import CTA from '@/components/CTA.vue'
+import Card from '@/components/Card.vue'
 import resourcesFE from '@/data/resourcesFE.json'
 import resourcesBE from '@/data/resourcesBE.json'
 </script>
@@ -38,6 +45,7 @@ import resourcesBE from '@/data/resourcesBE.json'
 export default {
   components: {
     CTA,
+    Card
   },
   props: {
     isFrontend: {
@@ -49,11 +57,15 @@ export default {
     return {
       resFE: resourcesFE,
       resBE: resourcesBE,
+      showResources: false
     }
   },
   computed: {
     keysToDisplay() {
       return this.isFrontend ? Object.keys(resourcesFE) : Object.keys(resourcesBE)
+    },
+    frontResources() {
+      return [...this.resFE[this.keysToDisplay]]
     }
   }
 }
