@@ -1,10 +1,13 @@
 <template>
   <a :href="`${url}`">
-    <div class="bg-white">
+    <div :class="{
+      'bg-primary-200 text-secondary-200': isFrontend,
+      'bg-secondary-200 text-secondary-100': !isFrontend,
+    }">
       <img :src="`../public/${img}`" alt="img" class="w-full h-48 object-cover">
-      <div>
-        <h4>{{ title }}</h4>
-        <p>{{ description }}</p>
+      <div class="p-4">
+        <h4 class="font-bold text-xl">{{ title }}</h4>
+        <p class="text-base">{{ description }}</p>
       </div>
     </div>
   </a>
@@ -13,10 +16,6 @@
 <script>
   export default {
     props: {
-      // resource: {
-      //   type: Object,
-      //   default: () => {}
-      // }
       url: {
         type: String,
         default: ''
@@ -32,6 +31,10 @@
       description: {
         type: String,
         default: ''
+      },
+      isFrontend: {
+        type: Boolean,
+        default: true
       }
     }
   }

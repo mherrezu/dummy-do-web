@@ -12,19 +12,5 @@
       "title": "Moure",
       "description": "Canal de Youtube de Midudev donde encontrarás cursos gratuitos de desarrollo web."
     }
-  ],
-  "Frameworks": [
-    {
-      "url": "https://www.youtube.com/c/midudev",
-      "img": "midu.jpeg",
-      "title": "Midudev",
-      "description": "Canal de Youtube de Midudev donde encontrarás cursos gratuitos de desarrollo web."
-    },
-    {
-      "url": "https://www.youtube.com/c/midudev",
-      "img": "midu.jpeg",
-      "title": "Moure",
-      "description": "Canal de Youtube de Midudev donde encontrarás cursos gratuitos de desarrollo web."
-    }
   ]
 }

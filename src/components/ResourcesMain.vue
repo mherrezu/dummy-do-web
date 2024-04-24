@@ -1,5 +1,5 @@
 <template>
-  <div id="frontend" class="h-screen" :class="{
+  <div id="frontend" class="min-h-screen" :class="{
     'bg-secondary-200': isFrontend,
     'bg-primary-200': !isFrontend
   }">
@@ -18,21 +18,23 @@
               :label="isFrontend ? 'frontend' : 'backend'"/>
           </div>
       </div>
-      <div class="flex justify-center items-center p-10">
-        <ul class="grid grid-cols-3 gap-8">
+      <div class="flex justify-center items-center p-4 sm:p-10">
+        <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <li v-for="(key, index) in keysToDisplay" :key="`res-${index}`">
-            <CTA @click="(showResources = !showResources) && (isActive = !isActive)" 
-              :size="!showResources ? 'xl' : 'md'" :color="(isFrontend ? 'primary' : 'secondary')"
-              transition="on" :label="key" />
+            <CTA @click="showResources = !showResources" 
+              :size="!showResources ? 'xl' : 'md'" :color="isFrontend ? 'primary' : 'secondary'"
+              transition="on" :label="key" class="font-bold"/>
           </li>
           </ul>
         </div>
-        <ul v-if="showResources">
-          <li v-for="(resource, index) in frontResources" :key="`res-${index}`">
-            <Card :url="resource.url" :img="resource.img" 
-              :title="resource.title" :description="resource.description"/>
-          </li> 
-        </ul>
+        <section v-if="showResources" class="mx-auto container p-4 sm:p-0">
+          <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <li v-for="(resource, index) in frontResources" :key="`res-${index}`">
+              <Card :url="resource.url" :img="resource.img" :title="resource.title" 
+                :description="resource.description" :isFrontend="isFrontend"/>
+            </li> 
+          </ul>
+        </section>
   </div>
   </template>
   

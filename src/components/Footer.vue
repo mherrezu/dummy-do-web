@@ -4,10 +4,10 @@
         <div>
           <p>© {{ currentYear }} dummy do web</p>
         </div>
-        <div>
+        <!-- <div>
           <router-link to="/privacy-policy" class="mx-2">privacy policy</router-link>
           <router-link to="/terms-of-service" class="mx-2">terms of service</router-link>
-        </div>
+        </div> -->
       </div>
     </footer>
   </template>
