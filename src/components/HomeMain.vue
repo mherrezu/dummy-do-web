@@ -8,10 +8,8 @@
       </div>
     </div>
     <section>
-      <ResourcesMain v-if="(showFrontend && isFrontend) || (showBackend && !isFrontend)" 
-      :isFrontend="isFrontend ? true : false" />
-      <!-- <FrontendMain v-if="showFrontend" />
-      <BackendMain v-if="showBackend" /> -->
+      <ResourcesMain v-if="(showFrontend && sendFront) || (showBackend && !sendFront)" 
+      :isFrontend="sendFront ? true : false" />
     </section>
 </template>
   
@@ -31,7 +29,7 @@ export default {
   },
   data() {
     return {
-      isFrontend: true,
+      sendFront: true,
       showFrontend: false,
       showBackend: false
     }
@@ -40,14 +38,14 @@ export default {
     handleShowSection(event) {
       if (event === 'frontend') {
         this.showFrontend = true;
-        this.isFrontend = true;
+        this.sendFront = true;
         this.showBackend = false;
         if (this.showFrontend = true)
           this.$router.push('/frontend');
       }
       if (event === 'backend') {
         this.showBackend = true;
-        this.isFrontend = false;
+        this.sendFront = false;
         this.showFrontend = false;
         if (this.showBackend = true)
           this.$router.push('/backend');

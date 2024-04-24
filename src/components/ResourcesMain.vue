@@ -20,18 +20,9 @@
       </div>
       <div class="flex justify-center items-center p-10">
         <div class="grid grid-cols-3 gap-8">
-          <!-- {{ keysToDisplay }} -->
           <CTA v-for="(key, index) in keysToDisplay" :key="`res-${index}`"
-         size="xl" :color="isFrontend ? 'primary' : 'secondary'"
-         transition="on" :label="key"/>
-          <!-- <CTA size="xl" color="primary" transition="on" label="frameworks" />
-          <CTA size="xl" color="primary" transition="on" label="libraries"/>
-          <CTA size="xl" color="primary" transition="on" label="UX/UI"/>
-          <CTA size="xl" color="primary" transition="on" label="best practices"/>
-          <CTA size="xl" color="primary" transition="on" label="GitHub"/>
-          <CTA size="xl" color="primary" transition="on" label="inspiration"/>
-          <CTA size="xl" color="primary" transition="on" label="who to follow"/>
-          <CTA size="xl" color="primary" transition="on" label="interview Q&A"/> -->
+            size="xl" :color="isFrontend ? 'primary' : 'secondary'"
+            transition="on" :label="key"/>
         </div>
       </div>
   </div>
