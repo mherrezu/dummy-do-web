@@ -33,6 +33,10 @@ export default {
       type: String,
       default: "off",
     },
+    selected: {
+      type: String,
+      default: "off",
+    }
   },
   computed: {
     buttonClasses() {
@@ -68,12 +72,16 @@ export default {
         //FrontendMain option buttons
         "bg-slate-50 hover:bg-primary-200 text-secondary-100 hover:text-secondary-200 cursor-pointer":
           this.color === "primary" && !this.disabled,
+        "bg-primary-200 text-secondary-200":
+          this.color === "primary-selected" && !this.disabled,
         "cursor-not-allowed bg-gray-200 text-gray-400 stroke-current":
           this.color === "primary" && this.disabled,
         
         // BackendMain: option buttons
         "bg-slate-50 hover:bg-secondary-200 text-secondary-100 hover:text-primary-200 cursor-pointer":
           this.color === "secondary" && !this.disabled,
+        "bg-secondary-200 text-primary-200":
+        this.color === "secondary-selected" && !this.disabled,
         "cursor-not-allowed bg-slate-50 dark:bg-dark-gray-900/60 border border-gray-400 dark:border-dark-gray-300 text-gray-400 dark:text-gray-600 stroke-current":
           this.disabled && this.color === "secondary",
         

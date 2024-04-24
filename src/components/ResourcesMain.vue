@@ -19,11 +19,13 @@
           </div>
       </div>
       <div class="flex justify-center items-center p-10">
-        <div class="grid grid-cols-3 gap-8">
-          <CTA @click="showResources = !showResources" v-for="(key, index) in keysToDisplay" :key="`res-${index}`"
-            size="xl" :color="isFrontend ? 'primary' : 'secondary'"
-            transition="on" :label="key"/>
-          </div>
+        <ul class="grid grid-cols-3 gap-8">
+          <li v-for="(key, index) in keysToDisplay" :key="`res-${index}`">
+            <CTA @click="(showResources = !showResources) && (isActive = !isActive)" 
+              :size="!showResources ? 'xl' : 'md'" :color="(isFrontend ? 'primary' : 'secondary')"
+              transition="on" :label="key" />
+          </li>
+          </ul>
         </div>
         <ul v-if="showResources">
           <li v-for="(resource, index) in frontResources" :key="`res-${index}`">
@@ -51,13 +53,13 @@ export default {
     isFrontend: {
       type: Boolean,
       default: true
-    }
+    },
   },
   data() {
     return {
       resFE: resourcesFE,
       resBE: resourcesBE,
-      showResources: false
+      showResources: false,
     }
   },
   computed: {
