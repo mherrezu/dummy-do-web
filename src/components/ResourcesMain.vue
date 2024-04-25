@@ -10,7 +10,7 @@
                 </a>
           </div>
           <div>
-              <CTA size="4xl" 
+              <CTA size="4xl"
               :color="isFrontend ? 'front-title-color' : 'back-title-color'"
               :label="isFrontend ? 'frontend' : 'backend'"/>
           </div>
@@ -18,17 +18,17 @@
       <div class="flex justify-center items-center p-4 sm:p-10">
         <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <li v-for="(key, index) in keysToDisplay" :key="`res-${index}`">
-            <CTA @click="showResources = !showResources" 
+            <CTA @click="(showResources = !showResources)"
               :size="!showResources ? 'xl' : 'md'" 
-              :color="isFrontend ? 'primary' : 'secondary'"
+              :color="(isFrontend ? 'primary' : 'secondary')"
               transition="on" :label="key" class="font-bold"/>
           </li>
           </ul>
         </div>
         <section v-if="showResources" class="mx-auto container p-4 sm:p-0">
-          <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 last:p-8">
             <li v-for="(resource, index) in frontResources" :key="`res-${index}`">
-              <Card :url="resource.url" :img="resource.img" :title="resource.title" 
+              <Card :url="resource.url" :img="resource.img" :title="resource.title" :language="resource.language"
                 :description="resource.description" :isFrontend="isFrontend"/>
             </li> 
           </ul>
@@ -69,7 +69,7 @@ export default {
     frontResources() {
       return [...this.resFE[this.keysToDisplay]]
     }
-  }
+  },
 }
 </script>
   

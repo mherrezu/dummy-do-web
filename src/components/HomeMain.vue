@@ -13,24 +13,32 @@
       :isFrontend="sendFront ? true : false" />
       <Loading v-if="(showBackend && !sendFront)" />
     </section>
+
+    <section>
+      <About/>
+    </section>
 </template>
   
 <script setup>
 import CTA from '@/components/CTA.vue'
 import ResourcesMain from '@/components/ResourcesMain.vue';
 import Loading from './Loading.vue';
+import About from './About.vue';
 </script>
+
 <script>
 export default {
   components: {
     CTA,
-    ResourcesMain
+    ResourcesMain,
+    About,
   },
   data() {
     return {
       sendFront: true,
       showFrontend: false,
-      showBackend: false
+      showBackend: false,
+      showAbout: false,
     }
   },
   methods: {

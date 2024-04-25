@@ -19,7 +19,7 @@
               <a href="/">
                 <CTA size="navbar" color="still-color" transition="on" label="home" />
               </a>
-              <a href="/about">
+              <a href="">
                 <CTA size="navbar" color="still-color" transition="on" label="about" />
               </a>
             </div>
@@ -62,6 +62,7 @@
 
 <script setup>
 import CTA from './CTA.vue'
+import About from './About.vue';
 </script>
 
 <script>

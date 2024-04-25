@@ -63,11 +63,13 @@ export default {
         "cursor-not-allowed bg-slate-50 dark:bg-dark-gray-900/60 border border-gray-400 dark:border-dark-gray-300 text-gray-400 dark:text-gray-600 stroke-current":
           this.disabled && this.color === "no-color",
         
-        //Title buttons i.e. frontend in FrontendMain - backend in BackendMain
+        //Title buttons i.e. frontend in FrontendMain - backend in BackendMain - about
         "text-primary-200 cursor-pointer":
           this.color === "front-title-color" && !this.disabled,
         "text-secondary-200 cursor-pointer":
           this.color === "back-title-color" && !this.disabled,
+        "text-secondary-100 cursor-pointer":
+          this.color === "about-title-color" && !this.disabled,
         
         //FrontendMain option buttons
         "bg-slate-50 hover:bg-primary-200 text-secondary-100 hover:text-secondary-200 cursor-pointer":

@@ -4,10 +4,14 @@
         <div>
           <p>© {{ currentYear }} dummy do web</p>
         </div>
-        <!-- <div>
-          <router-link to="/privacy-policy" class="mx-2">privacy policy</router-link>
-          <router-link to="/terms-of-service" class="mx-2">terms of service</router-link>
-        </div> -->
+        <div class="flex flex-row">
+          <a href="https://github.com/mherrezu/dummy-do-web">
+              <img src="/src/assets/svg/github.svg" alt="GitHub" color="text-primary-200" class="m-2">
+          </a>
+          <a href="https://www.instagram.com/dummydoweb/">
+              <img src="/src/assets/svg/instagram.svg" alt="GitHub" color="text-primary-200" class="m-2">
+          </a>
+        </div>
       </div>
     </footer>
   </template>

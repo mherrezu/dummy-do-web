@@ -1,16 +1,32 @@
 {
-  "Youtube Channels": [
+  "YouTube channels": [
     {
       "url": "https://www.youtube.com/c/midudev",
       "img": "midu.jpeg",
       "title": "Midudev",
+      "language": "spanish.svg",
       "description": "Canal de Youtube de Midudev donde encontrarás cursos gratuitos de desarrollo web."
     },
     {
       "url": "https://www.youtube.com/c/midudev",
-      "img": "midu.jpeg",
-      "title": "Moure",
+      "img": "braismoure.jpeg",
+      "title": "Brais Moure",
+      "language": "spanish.svg",
       "description": "Canal de Youtube de Midudev donde encontrarás cursos gratuitos de desarrollo web."
+    },
+    {
+      "url": "https://www.youtube.com/@CarlosAzaustre",
+      "img": "carlosazaustre.jpeg",
+      "title": "Carlos Azaustre",
+      "language": "spanish.svg",
+      "description": "Canal de Youtube de Carlos azaustre donde encontrarás cursos gratuitos de desarrollo web."
+    },
+    {
+      "url": "https://www.youtube.com/@CarmenAnsio",
+      "img": "carmenansio.jpeg",
+      "title": "Carmen Ansio",
+      "language": "spanish.svg",
+      "description": "Canal de Youtube de Carmen Ansio donde encontrarás cursos gratuitos de UX/UI."
     }
   ]
 }
