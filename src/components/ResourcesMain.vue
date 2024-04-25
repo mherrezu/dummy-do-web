@@ -3,18 +3,15 @@
     'bg-secondary-200': isFrontend,
     'bg-primary-200': !isFrontend
   }">
-      <div class="flex items-center justify-between p-10">
-          <div class="w-fit h-full border-2 rounded-full"  :class="{
-                    'border-primary-200': isFrontend,
-                    'border-secondary-200': !isFrontend,
-                  }">
+      <div class="flex items-center p-10 gap-2">
+          <div class="w-fit h-full border-4 border-secondary-100 rounded-full">
               <a href="/">
-                  <img src="/src/assets/svg/arrow-left.svg" alt="left-arrow" class="stroke-current text-red-500 w-10 h-10">
+                  <img src="/src/assets/svg/arrow-left.svg" alt="left-arrow" class="w-10 h-10" />
                 </a>
           </div>
           <div>
               <CTA size="4xl" 
-              :color="isFrontend ? 'front-title-color' : 'back-title-color'" 
+              :color="isFrontend ? 'front-title-color' : 'back-title-color'"
               :label="isFrontend ? 'frontend' : 'backend'"/>
           </div>
       </div>
@@ -22,7 +19,8 @@
         <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <li v-for="(key, index) in keysToDisplay" :key="`res-${index}`">
             <CTA @click="showResources = !showResources" 
-              :size="!showResources ? 'xl' : 'md'" :color="isFrontend ? 'primary' : 'secondary'"
+              :size="!showResources ? 'xl' : 'md'" 
+              :color="isFrontend ? 'primary' : 'secondary'"
               transition="on" :label="key" class="font-bold"/>
           </li>
           </ul>
