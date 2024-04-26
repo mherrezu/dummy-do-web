@@ -18,10 +18,10 @@
       <div class="flex justify-center items-center p-4 sm:p-10">
         <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <li v-for="(key, index) in keysToDisplay" :key="`res-${index}`">
-            <CTA @click="(showResources = !showResources)"
+            <CTA @click="handleResources"
               :size="!showResources ? 'xl' : 'md'" 
               :color="(isFrontend ? 'primary' : 'secondary')"
-              transition="on" :label="key" class="font-bold"/>
+              transition="on" :label="key.title" class="font-bold"/>
           </li>
           </ul>
         </div>
@@ -63,13 +63,23 @@ export default {
     }
   },
   computed: {
+    // keysToDisplay() {
+    //   return this.isFrontend ? Object.keys(resourcesFE) : Object.keys(resourcesBE)
+    // },
     keysToDisplay() {
-      return this.isFrontend ? Object.keys(resourcesFE) : Object.keys(resourcesBE)
+        const keys = this.isFrontend ? Object.keys(resourcesFE) : Object.keys(resourcesBE);
+        return keys.map(key => ({ title: key, isActive: false }));
     },
     frontResources() {
       return [...this.resFE[this.keysToDisplay]]
     }
   },
+  // methods: {
+  //   handleResources() {
+  //     this.showResources = !this.showResources,
+  //     // Add functionality for isActive
+  //   },
+  // }
 }
 </script>
   

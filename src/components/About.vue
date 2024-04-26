@@ -35,7 +35,7 @@
         persons: [
           {
             name: 'María Herrezuelo',
-            image: 'public/mherrezuelo.jpeg',
+            image: '/mherrezuelo.jpeg',
             description: 'Web developer blah blah blah blah blah blah blah blah blah blah',
             socialLinks: [
               { name: 'GitHub', url: 'https://github.com/mherrezu', icon:'github'},
@@ -44,7 +44,7 @@
           },
           {
             name: 'Marina Jiménez',
-            image: 'public/mjimenez.jpeg',
+            image: '/mjimenez.jpeg',
             description: 'Web developer blah blah blah blah blah blah blah blah blah blah',
             socialLinks: [
               { name: 'GitHub', url: 'https://github.com/marinajimnz' , icon:'github'},
