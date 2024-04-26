@@ -5,10 +5,10 @@
           <p>© {{ currentYear }} dummy do web</p>
         </div>
         <div class="flex flex-row">
-          <a href="https://github.com/mherrezu/dummy-do-web">
+          <a href="https://github.com/mherrezu/dummy-do-web" target="_blank">
               <img src="/src/assets/svg/github.svg" alt="GitHub" color="text-primary-200" class="m-2">
           </a>
-          <a href="https://www.instagram.com/dummydoweb/">
+          <a href="https://www.instagram.com/dummydoweb/" target="_blank">
               <img src="/src/assets/svg/instagram.svg" alt="Instagram" color="text-primary-200" class="m-2">
           </a>
         </div>
