@@ -15,13 +15,13 @@
           </div>
         </div>
       </router-link>
-      <div class="flex justify-center items-center p-4 sm:p-10">
+      <div class="flex justify-center items-center p-4 sm:p-10 h-48">
         <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <li v-for="(key, index) in keysToDisplay" :key="`res-${index}`">
             <CTA @click="handleResources(index)"
             :size="!showResources ? 'xl' : 'md'" 
             :color="(isFrontend ? 'primary' : 'secondary')"
-            transition="on" :label="key" class="font-bold"/>
+            transition="on" :label="key" class="font-bold w-full"/>
           </li>
         </ul>
       </div>
