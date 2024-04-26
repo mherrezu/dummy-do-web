@@ -3,18 +3,18 @@
     'bg-secondary-200': isFrontend,
     'bg-primary-200': !isFrontend
   }">
-      <div class="flex items-center p-10 gap-2">
-        <div class="w-fit h-full border-4 border-secondary-100 rounded-full">
-          <a href="/">
+      <router-link to="/">
+        <div class="flex items-center p-10 gap-2">
+          <div class="w-fit h-full border-4 border-secondary-100 rounded-full">
             <img src="/src/assets/svg/arrow-left.svg" alt="left-arrow" class="w-10 h-10" />
-          </a>
+          </div>
+          <div>
+            <CTA size="4xl"
+            :color="isFrontend ? 'front-title-color' : 'back-title-color'"
+            :label="isFrontend ? 'frontend' : 'backend'"/>
+          </div>
         </div>
-        <div>
-          <CTA size="4xl"
-          :color="isFrontend ? 'front-title-color' : 'back-title-color'"
-          :label="isFrontend ? 'frontend' : 'backend'"/>
-        </div>
-      </div>
+      </router-link>
       <div class="flex justify-center items-center p-4 sm:p-10">
         <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <li v-for="(key, index) in keysToDisplay" :key="`res-${index}`">

@@ -16,12 +16,12 @@
           <!-- Links -->
           <div class="hidden md:block">
             <div class="flex items-baseline space-x-4 text-primary-200 text-md min-w-44">
-              <a href="/">
+              <router-link to="/">
                 <CTA size="navbar" color="still-color" transition="on" label="home" />
-              </a>
-              <a href="">
+              </router-link>
+              <router-link to="/about">
                 <CTA size="navbar" color="still-color" transition="on" label="about" />
-              </a>
+              </router-link>
             </div>
           </div>
 
@@ -49,20 +49,19 @@
         <!-- Mobile menu, show/hide based on menu state. -->
         <div v-show="isMenuOpen" class="sm:hidden h-screen" id="mobile-menu">
           <div class="flex flex-col items-end text-primary-200 text-md mt-8">
-            <a href="/">
+            <router-link to="/">
               <CTA size="navbar" color="still-color" transition="on" label="home" />
-            </a>
-            <a href="/about">
+            </router-link>
+            <router-link to="/about">
               <CTA size="navbar" color="still-color" transition="on" label="about" />
-            </a>
+            </router-link>
           </div>
         </div>
     </nav>
 </template>
 
 <script setup>
-import CTA from './CTA.vue'
-import About from './About.vue';
+import CTA from '@/components/CTA.vue'
 </script>
 
 <script>
