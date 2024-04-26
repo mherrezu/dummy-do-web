@@ -64,11 +64,11 @@ export default {
           this.disabled && this.color === "no-color",
         
         //Title buttons i.e. frontend in FrontendMain - backend in BackendMain - about
-        "text-primary-200 cursor-pointer":
+        "text-primary-200 text-bold cursor-pointer":
           this.color === "front-title-color" && !this.disabled,
-        "text-secondary-200 cursor-pointer":
+        "text-secondary-200 text-bold cursor-pointer":
           this.color === "back-title-color" && !this.disabled,
-        "text-secondary-100 cursor-pointer":
+        "text-secondary-100 text-bold cursor-pointer":
           this.color === "about-title-color" && !this.disabled,
         
         //FrontendMain option buttons

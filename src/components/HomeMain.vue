@@ -1,10 +1,10 @@
 <template>
     <div v-if="!showFrontend && !showBackend" class="flex flex-col sm:flex-row h-screen w-full">
       <div class="w-full sm:w-1/2 h-full flex justify-center items-center bg-secondary-200">
-          <CTA @onClick="handleShowSection('frontend')" size="4xl" color="frontend-home" transition="on" class="font-bold">Frontend</CTA>
+          <CTA @onClick="handleShowSection('frontend')" size="4xl" color="frontend-home" transition="on" class="font-bold">frontend</CTA>
       </div>
       <div class="w-full sm:w-1/2 h-full flex justify-center items-center bg-primary-200">
-          <CTA @onClick="handleShowSection('backend')" size="4xl" color="backend-home" transition="on" class="font-bold">Backend</CTA>
+          <CTA @onClick="handleShowSection('backend')" size="4xl" color="backend-home" transition="on" class="font-bold">backend</CTA>
       </div>
     </div>
     <section>

@@ -10,7 +10,7 @@
           </div>
 
           <div class="hidden md:block">
-            <h2 class="text-secondary-200 text-xl">Junior made easy</h2>
+            <h2 class="text-secondary-200 text-xl">junior made easy</h2>
           </div>
           
           <!-- Links -->
