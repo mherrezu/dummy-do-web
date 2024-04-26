@@ -4,7 +4,7 @@
       <a href="/">
         <img src="/src/assets/img/Logo - Purple.png" alt="Logo" class="h-60 animate-bounce">
       </a>
-      <p class="text-primary-200 text-2xl selection:select-none">Comming soon!</p>
+      <p class="text-primary-200 text-2xl selection:select-none">Coming soon!</p>
     </div>
   </div>
 </template>

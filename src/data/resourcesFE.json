@@ -28,5 +28,19 @@
       "language": "spanish.svg",
       "description": "Canal de Youtube de Carmen Ansio donde encontrarás cursos gratuitos de UX/UI."
     }
+  ],
+  "Tools": [
+    {
+      "url": "https://www.icons8.es/",
+      "img": "figma.png",
+      "title": "Icons8",
+      "description": "Iconos, ilustraciones y gráficos gratuitos."
+    },
+    {
+      "url": "https://fonts.google.com/",
+      "img": "google-fonts.png",
+      "title": "Google Fonts",
+      "description": "Fuentes gratuitas para tus proyectos."
+    }
   ]
 }
