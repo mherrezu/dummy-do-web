@@ -1,0 +1,168 @@
+{
+  "canales de YouTube": [
+    {
+      "url": "https://www.youtube.com/c/midudev",
+      "img": "midu.jpeg",
+      "title": "Midudev",
+      "language": "spanish",
+      "description": "Canal de Youtube de Midudev donde encontrarás cursos gratuitos de desarrollo web."
+    },
+    {
+      "url": "https://www.youtube.com/@CarmenAnsio",
+      "img": "carmenansio.jpeg",
+      "title": "Carmen Ansio",
+      "language": "spanish",
+      "description": "Canal de Youtube de Carmen Ansio donde encontrarás cursos gratuitos de UX/UI."
+    },
+    {
+      "url": "https://www.youtube.com/c/midudev",
+      "img": "braismoure.jpeg",
+      "title": "Brais Moure",
+      "language": "spanish",
+      "description": "Canal de Youtube de Midudev donde encontrarás cursos gratuitos de desarrollo web."
+    },
+    {
+      "url": "https://www.youtube.com/@CarlosAzaustre",
+      "img": "carlosazaustre.jpeg",
+      "title": "Carlos Azaustre",
+      "language": "spanish",
+      "description": "Canal de Youtube de Carlos azaustre donde encontrarás cursos gratuitos de desarrollo web."
+    }
+  ],
+  "herramientas": [
+    {
+      "url": "https://www.icons8.es/",
+      "img": "icons8.png",
+      "title": "Icons8",
+      "description": "Iconos, ilustraciones y gráficos gratuitos."
+    },
+    {
+      "url": "https://fonts.google.com/",
+      "img": "google-fonts.png",
+      "title": "Google Fonts",
+      "description": "Fuentes gratuitas para tus proyectos."
+    },
+    {
+      "url": "https://readme.so/es",
+      "img": "readme.png",
+      "title": "Readme.so",
+      "description": "Herramienta para crear READMEs de tus proyectos."
+    },
+    {
+      "url": "https://squoosh.app/",
+      "img": "squoosh.png",
+      "title": "Squoosh",
+      "description": "Optimizador de imágenes."
+    },
+    {
+      "url": "https://shots.so/",
+      "img": "shots.png",
+      "title": "Shots",
+      "description": "Dale un toque especial a tus capturas de pantalla."
+    },
+    {
+      "url": "https://uicolors.app/create",
+      "img": "ui-colors.png",
+      "title": "UI Colors",
+      "description": "Generador de paletas de colores."
+    }
+  ],
+  "extensiones de Chrome":[
+    {
+      "url": "https://chromewebstore.google.com/detail/gofullpage-full-page-scre/fdpohaocaechififmbbbbbknoalclacl?hl=en-GB",
+      "img": "full-page-capture.png",
+      "title": "Full Page Capture",
+      "description": "Captura de pantalla de una página completa de manera sencilla."
+    },
+    {
+      "url": "https://chromewebstore.google.com/detail/mobile-simulator-responsi/ckejmhbmlajgoklhgbapkiccekfoccmk?hl=en-GB",
+      "img": "mobile-simulator.png",
+      "title": "Mobile Simulator",
+      "description": "Simula cómo se verá tu web en diferentes dispositivos móviles."
+    },
+    {
+      "url": "https://chromewebstore.google.com/detail/visbug/cdockenadnadldjbbgcallicgledbeoc",
+      "img": "visbug.png",
+      "title": "VisBug",
+      "description": "Edita cualquier página web en tiempo real."
+    }
+  ],
+  "inspiración": [
+    {
+      "url": "https://dribbble.com/",
+      "img": "dribbble.png",
+      "title": "Dribbble",
+      "description": "Descubre trabajos de diseñadores de todo el mundo."
+    },
+    {
+      "url": "https://www.behance.net/",
+      "img": "behance.png",
+      "title": "Behance",
+      "description": "Descubre trabajos de diseñadores de todo el mundo."
+    },
+    {
+      "url": "https://www.awwwards.com/",
+      "img": "awwwards.png",
+      "title": "Awwwards",
+      "description": "Descubre trabajos de diseñadores de todo el mundo."
+    }
+  ],
+  "cursos": [
+    {
+      "url": "https://platzi.com/",
+      "img": "platzi.png",
+      "title": "Platzi",
+      "description": "Cursos de ingeniería y desarrollo, UX/UI, marketing..."
+    },
+    {
+      "url": "https://www.coursera.org/",
+      "img": "coursera.png",
+      "title": "Coursera",
+      "description": "Cursos de programación, diseño y marketing."
+    },
+    {
+      "url": "https://www.udemy.com/",
+      "img": "udemy.jpeg",
+      "title": "Udemy",
+      "description": "Cursos de desarrollo, informática y software, diseño, marketing."
+    }
+  ],
+  "frameworks": [
+    {
+      "url": "https://es.react.dev/",
+      "img": "react.png",
+      "title": "React",
+      "description": "Biblioteca de JS para interfaces de usuario. Se enfoca en componentes reutilizables y enlace de datos unidireccional."
+    },
+    {
+      "url": "https://vuejs.org/",
+      "img": "vue.png",
+      "title": "Vue",
+      "description": "Un framework desarrollado por Google. Ofrece enlace de datos bidireccional, inyección de dependencias..."
+    },
+    {
+      "url": "https://angular.io/",
+      "img": "angular.png",
+      "title": "Angular",
+      "description": "Curva de aprendizaje suave. Para crear apps de una sola página o interfaces de usuario interactivas."
+    },
+    {
+      "url": "https://svelte.dev/",
+      "img": "svelte.jpeg",
+      "title": "Svelte",
+      "description": "Compila su lógica en tiempo de compilación y no en el navegador. Mejor optimización y rendimiento."
+    },
+    {
+      "url": "https://jquery.com/",
+      "img": "jquery.png",
+      "title": "jQuery",
+      "description": "Biblioteca que se utiliza para simplificar la manipulación del DOM, manejar eventos y realizar animaciones."
+    },
+    {
+      "url": "https://backbonejs.org/",
+      "img": "backbone.jpeg",
+      "title": "Backbone",
+      "description": "Se basa en el patrón de diseño MVP. Es ideal para construir aplicaciones de una sola página ."
+    }
+    ]
+}
