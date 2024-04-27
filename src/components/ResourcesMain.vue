@@ -21,10 +21,7 @@
             <CTA @click="handleResources(index)"
             :size="!showResources ? 'xl' : 'md'" 
             :color="(isFrontend ? 'primary' : 'secondary')"
-            transition="on" :label="key" class="font-bold w-full" :class="{
-              'bg-primary-200 text-secondary-200': isFrontend && (activeKey === key),
-              'bg-secondary-200 text-primary-200': !isFrontend && (activeKey === key)
-            }">
+            transition="on" :label="key" class="font-bold w-full">
           </CTA>
           </li>
         </ul>
