@@ -29,7 +29,7 @@
       "description": "Canal de Youtube de Carlos azaustre donde encontrarás cursos gratuitos de desarrollo web."
     }
   ],
-  "Tools": [
+  "tools": [
     {
       "url": "https://www.icons8.es/",
       "img": "icons8.png",
@@ -67,7 +67,7 @@
       "description": "Generador de paletas de colores."
     }
   ],
-  "Chrome Extensión":[
+  "Chrome extensions":[
     {
       "url": "https://chromewebstore.google.com/detail/gofullpage-full-page-scre/fdpohaocaechififmbbbbbknoalclacl?hl=en-GB",
       "img": "full-page-capture.png",
@@ -87,7 +87,7 @@
       "description": "Edita cualquier página web en tiempo real."
     }
   ],
-  "Inspiration": [
+  "inspiration": [
     {
       "url": "https://dribbble.com/",
       "img": "dribbble.png",
@@ -107,7 +107,7 @@
       "description": "Descubre trabajos de diseñadores de todo el mundo."
     }
   ],
-  "Courses": [
+  "courses": [
     {
       "url": "https://platzi.com/",
       "img": "platzi.png",
@@ -126,5 +126,43 @@
       "title": "Udemy",
       "description": "Cursos de programación, diseño y marketing."
     }
-  ]
+  ],
+  "frameworks": [
+    {
+      "url": "https://es.react.dev/",
+      "img": "react.png",
+      "title": "React",
+      "description": "Biblioteca de JS para interfaces de usuario. Se enfoca en componentes reutilizables y enlace de datos unidireccional."
+    },
+    {
+      "url": "https://vuejs.org/",
+      "img": "vue.png",
+      "title": "Vue",
+      "description": "Un framework desarrollado por Google. Ofrece enlace de datos bidireccional, inyección de dependencias..."
+    },
+    {
+      "url": "https://angular.io/",
+      "img": "angular.png",
+      "title": "Angular",
+      "description": "Curva de aprendizaje suave. Para crear apps de una sola página o interfaces de usuario interactivas."
+    },
+    {
+      "url": "https://svelte.dev/",
+      "img": "svelte.jpeg",
+      "title": "Svelte",
+      "description": "Compila su lógica en tiempo de compilación y no en el navegador. Mejor optimización y rendimiento."
+    },
+    {
+      "url": "https://jquery.com/",
+      "img": "jquery.png",
+      "title": "jQuery",
+      "description": "Biblioteca que se utiliza para simplificar la manipulación del DOM, manejar eventos y realizar animaciones."
+    },
+    {
+      "url": "https://backbonejs.org/",
+      "img": "backbone.jpeg",
+      "title": "Backbone",
+      "description": "Se basa en el patrón de diseño MVP. Es ideal para construir aplicaciones de una sola página ."
+    }
+    ]
 }
