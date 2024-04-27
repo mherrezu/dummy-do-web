@@ -46,7 +46,7 @@
           {
             name: 'María Herrezuelo',
             image: '/mherrezuelo.jpeg',
-            description: 'Web developer',
+            description: 'Desarrolladora web junior.',
             socialLinks: [
               { name: 'GitHub', url: 'https://github.com/mherrezu', icon:'github'},
               { name: 'LinkedIn', url: 'https://www.linkedin.com/in/mherrezuelo/', icon: 'linkedin'}
@@ -55,7 +55,7 @@
           {
             name: 'Marina Jiménez',
             image: '/mjimenez.jpeg',
-            description: 'Web developer',
+            description: 'Desarrolladora web junior.',
             socialLinks: [
               { name: 'GitHub', url: 'https://github.com/marinajimnz' , icon:'github'},
               { name: 'LinkedIn', url: 'https://www.linkedin.com/in/marina-jimenez-mendez/', icon: 'linkedin'}

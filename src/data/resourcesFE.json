@@ -1,5 +1,5 @@
 {
-  "YouTube channels": [
+  "canales de YouTube": [
     {
       "url": "https://www.youtube.com/c/midudev",
       "img": "midu.jpeg",
@@ -29,7 +29,7 @@
       "description": "Canal de Youtube de Carlos azaustre donde encontrarás cursos gratuitos de desarrollo web."
     }
   ],
-  "tools": [
+  "herramientas": [
     {
       "url": "https://www.icons8.es/",
       "img": "icons8.png",
@@ -67,7 +67,7 @@
       "description": "Generador de paletas de colores."
     }
   ],
-  "Chrome extensions":[
+  "extensiones de Chrome":[
     {
       "url": "https://chromewebstore.google.com/detail/gofullpage-full-page-scre/fdpohaocaechififmbbbbbknoalclacl?hl=en-GB",
       "img": "full-page-capture.png",
@@ -87,7 +87,7 @@
       "description": "Edita cualquier página web en tiempo real."
     }
   ],
-  "inspiration": [
+  "inspiración": [
     {
       "url": "https://dribbble.com/",
       "img": "dribbble.png",
@@ -107,12 +107,12 @@
       "description": "Descubre trabajos de diseñadores de todo el mundo."
     }
   ],
-  "courses": [
+  "cursos": [
     {
       "url": "https://platzi.com/",
       "img": "platzi.png",
       "title": "Platzi",
-      "description": "Cursos de programación, diseño y marketing."
+      "description": "Cursos de ingeniería y desarrollo, UX/UI, marketing..."
     },
     {
       "url": "https://www.coursera.org/",
@@ -122,9 +122,9 @@
     },
     {
       "url": "https://www.udemy.com/",
-      "img": "udemy.png",
+      "img": "udemy.jpeg",
       "title": "Udemy",
-      "description": "Cursos de programación, diseño y marketing."
+      "description": "Cursos de desarrollo, informática y software, diseño, marketing."
     }
   ],
   "frameworks": [
